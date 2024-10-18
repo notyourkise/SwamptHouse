@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAMP HOUSE</title>
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;300;400;,700;&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FEATHER ICONS-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">SWAMP<span>HOUSE</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Signature</a>
+        <a href="#menu">Menu</a>
+        <a href="#team">Team</a>
+        <a href="#con">Contact</a>
+      </div>
+
+      <div class="navbar-ekstra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#menu" id="shopping-cart"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamberger-menu" onclick="toggleMenu()">
+          <!-- Perbaikan -->
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+      <a href="#">Home</a>
+      <a href="#about">Signature</a>
+      <a href="#menu">Menu</a>
+      <a href="#team">Team</a>
+      <a href="#con">Contact</a>
+      <a href="#" onclick="toggleMenu()">Close</a>
+      <!-- Close button -->
+    </div>
+
+    <!--HERO SECTION-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Lets Talk About<span>Rawa</span></h1>
+        <h2><span>OPEN:</span> 09:00-00:00</h2>
+        <p>
+          SwampHouse atau yang lebih dikenal dengan <br />Rumah Rawa adalah
+          sebuah Coffe Shop <br />
+          Bernuansakan alam terbuka,Dikelilingi dengan <br />
+          Pohon rindang. SwampHouse akan menjadi <br />
+          tempat terbaik untuk menikmati segelas Kopimu
+        </p>
+        <a href="#menu" class="cta">Pesan Kopi Krim Mu</a>
+      </main>
+    </section>
+    <!--HERO SECTION END-->
+
+    <!-- ABOUT SECTION START-->
+    <section id="about" class="about">
+      <h2><span>Signature</span> Menu</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/kopikrim.jpg" alt="About Us" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa Memilih Kopi Krim?</h3>
+          <p>
+            Kopi Krim adalah sajian minuman kopi yang dicampur susu, umumnya
+            dibuat dengan metode tertentu mulai dari kopi dipadukan susu secara
+            tradisional hingga kopi dicampur susu yang dibuat oleh barista
+            Profesional.
+          </p>
+          <p>
+            Terkhusus Di Tempat Kami, Kopi Krim dibuat dengan cara Profesional
+            dan Teknik yang sudah Modern, Kopi yang relatif ramah di kantong ini
+            cendrung disukai oleh beberapa kalangan, Anak muda bahkan Dewasa.
+            Penasaran akan menu Signature Kami? Let's Come To Rumah Rawa.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION END-->
+
+    <!-- MENU SECTION START-->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Berbagai Macam Menu Tersedia Mulai Dari Coffe,Non-Coffe Serta Makanan
+        Berat. Rumah Rawa Cocok Menjadi Tempat Singgah Nongkrong Mu.
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/menu/1.jpg" alt="americano" />
+          <h3 class="menu-card-title">-- Americano --</h3>
+          <p class="menu-card-price">IDR 10K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/2.jpg" alt="ayamgeprek" />
+          <h3 class="menu-card-title">-- Ayam Geprek --</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/3.jpg" alt="kopikrim" />
+          <h3 class="menu-card-title">-- Kopi Krim --</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/4.jpg" alt="kopicaramel" />
+          <h3 class="menu-card-title">-- Caramel Coffe --</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/5.jpg" alt="kopipandan" />
+          <h3 class="menu-card-title">-- Pandan Coffe --</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+      </div>
+    </section>
+    <!-- MENU SECTION END-->
+
+    <!-- TEAM SECTION START-->
+    <section id="team" class="team">
+      <h2>Our<span> Team</span></h2>
+      <p>
+        Grub yang terbentuk dengan berbagai latar belakang yang berbeda,
+        Membentuk sebuah kolaborasi baru dan ber synergi bersama.
+      </p>
+
+      <div class="row">
+        <div class="team-card">
+          <img src="img/menu/dardi.jpg" alt="Derris" />
+          <h3 class="team-card-title">---- M. Derris Pandji L ----</h3>
+          <p class="team-card-price">Ekonomi Syariah</p>
+        </div>
+        <div class="team-card">
+          <img src="img/menu/gue.jpg" alt="Haikal" />
+          <h3 class="team-card-title">--- M. Fikri Haikal A---</h3>
+          <p class="team-card-price">Sistem Informasi</p>
+        </div>
+        <div class="team-card">
+          <img src="img/menu/raja1.jpg" alt="Radja" />
+          <h3 class="team-card-title">--- Radja Widhyasmara S ---</h3>
+          <p class="team-card-price">Agribisnis Pertanian</p>
+        </div>
+        <div class="team-card">
+          <img src="img/menu/winata.jpg" alt="kopicaramel" />
+          <h3 class="team-card-title">--- Yoshua Pandawhinatha ---</h3>
+          <p class="team-card-price">Teknik Informatika</p>
+        </div>
+      </div>
+    </section>
+    <!-- TEAM SECTION END-->
+
+    <!-- CONTACT SECTION START-->
+    <section id="con" class="con">
+      <h2>Contact<span> Us</span></h2>
+      <p>
+        Grub yang terbentuk dengan berbagai latar belakang yang berbeda,
+        Membentuk sebuah kolaborasi baru dan ber synergi bersama.
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.687337253964!2d117.15308247395846!3d-0.46426919953117823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df679f1349b3eb1%3A0x928af7cb89a0684!2sRumah%20Rawa!5e0!3m2!1sen!2sid!4v1729288703017!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-grup">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-grup">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-grup">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="number phone" />
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- CONTACT SECTION END-->
+
+    <!-- FOOTER START-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="mail"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Siganature</a>
+        <a href="#menu">Menu</a>
+        <a href="#team">Team</a>
+        <a href="#con">Contact</a>
+      </div>
+
+      <div class="credit">
+        <p>Created By <a href="">FikriHaikal</a>. | &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- FOOTER END-->
+
+    <!--FEATHER ICONS-->
+    <script>
+      feather.replace();
+
+      function toggleMenu() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
